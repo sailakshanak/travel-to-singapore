@@ -11,7 +11,14 @@
       .content{font-size:30px;padding:20px;color:#510424; background-color:#A2F4FD;}
         .wrap{padding:5px;text-align:center;}
       nav ul li{list-style-type:none; display:inline-block; padding:10px;} 
-      nav ul li a{text-decoration:none;}    
+      nav ul li a{text-decoration:none;} 
+      .hotel{width:100%;}
+      .hotel thead th{background-color:#CEFAFE;color:#E61876; padding:10px;}
+      .hotel tbody td{padding:10px;background-color:#FCE7F3;} 
+      .hotel tfoot td{padding:10px;background-color:#9AE630;text-align:center;}
+      .hotel tbody tr:nth-child(even){background-color:#FAE8FF;}
+      .hotel tbody tr:hover{background-color:#DBEAFE;}      
+      .hotel tbody td:hover{color:#E61876;}
     </style>
   </head> 
   <body>
@@ -28,7 +35,44 @@
    </header>
      <main>
        <table class="hotel">
-         
+        <thead>
+          <tr>
+            <th>Hotel</th>
+            <th>Price</th> 
+            <th>Facilities</th>          
+          </tr>
+        </thead> 
+         <tbody>
+           <tr>
+             <td>
+               <img src="singapore hotel 1.jpg" width="450" height="400">
+               <h3> </h3>
+             </td>
+             <td>$150 per night</td>
+             <td> </td>
+           </tr>
+           <tr>
+             <td>
+               <img src="singapore hotel 2.jpg" width="450" height="400">
+               <h3> </h3>
+             </td>
+             <td>$180 per night</td>
+             <td> </td>
+           </tr> 
+           <tr>
+             <td>
+               <img src="singapore hotel 3.jpg" width="450" height="400">
+               <h3> </h3>
+             </td>
+             <td>$200 per night</td>
+             <td> </td>
+           </tr>         
+         </tbody>
+         <tfoot>
+          <tr>
+            <td colspan="3">Have a Happy Stay in Singapore</td>
+          </tr> 
+         </tfoot>
        </table>
          </main>
      <footer>
