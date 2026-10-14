@@ -7,11 +7,16 @@
     <style>
     header{background-color:#9932CC;width:100%;height:100px;text-align:center;}
       footer{background-color:#00BFFE;width:100%;height:80px; font-size:25px; text-align:center; padding:6px;}
-      .city{padding:200px;background-image:url("singapore view.jpeg"); background-repeat:no-repeat; background-size:cover; text-align:center;}
-      .content{font-size:30px;padding:20px;color:#510424; background-color:#A2F4FD;}
-        .wrap{padding:5px;text-align:center;}
       nav ul li{list-style-type:none; display:inline-block; padding:10px;} 
-      nav ul li a{text-decoration:none;}    
+      nav ul li a{text-decoration:none;} 
+      h2{text-align:center; text-shadow:5px 5px #FCCEE8;}
+      p{font-sixe:22px; color:#B8E6FE;}
+      .food{text-align:center;}
+      .food img{width:200px; height:150px; transition:width height transform 2s;}  
+    .food img:hover{width:400px; height:300px; transform: rotate(-10deg);}
+      .img-overlap{position:relative; height:200px; width:300px; text-align:center;} 
+      .img-overlap img{position:absolute; transition:opacity 1s;}
+      .img-overlap img.top:hover {opacity:0;}   
     </style>
   </head> 
   <body>
@@ -35,9 +40,18 @@
      </nav>
    </header>
      <main>
-       <table class="hotel">
-         
-       </table>
+       <h2>Singapore Delicacies</h2>
+         <p> Singaporean food is a vibrant mix of Chinese, Malay, Indian, and Peranakan influences, best experienced at local hawker centres.</p>
+      <div class="food">
+        <img src="      ">
+        <h3>Hainanese Chicken Rice</h3>
+        <img src="      ">
+        <h3>Chili Crab</h3>
+      </div>
+       <div class="img-overlap">
+         <img class="bottom" src="" height="200" width="300">
+         <img class="top" src="" height="200" width="300">         
+       </div>
          </main>
      <footer>
       <p>This website is made with MindChamp.To know more about Singapore <a href="https://www.britannica.com/place/Singapore" target="_blank" title="britannica">click here</a></p>
