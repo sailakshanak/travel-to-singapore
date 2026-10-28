@@ -13,21 +13,37 @@
       nav ul li{list-style-type:none; display:inline-block; padding:10px;} 
       nav ul li a{text-decoration:none;}    
     </style>
-    <stript>
+    <script>
       functin validate(){
-      var name1=document.getElementById("name").value;
+       var name1=document.getElementById("name").value;
 var phone1=document.getElementById("phone").value;
-var name1=document.getElementById("name").value;
 var email1=document.getElementById("email").value;
 var message1=document.getElementById("message").value;
-      if(name1.length<5)}
-        text="Please enter full name"
-        error_message.innerHTML;
+      if(name1.length<5){
+        text="Please enter full name";
+        error_message.innerHTML=text;
         reture false;
       }
-    
-      
-    </stript>
+        
+    if(isNaN(phone1)||phone1.length!=10){
+      text="Please enter valid phone number";
+      error_message.innerHTML=text;
+        reture false;
+    }
+if(email1.inexOf("@")==-1 || email1.length<6) {
+      text="Please enter valid email";
+      error_message.innerHTML=text;
+        reture false;
+}
+        if(message1.lenght<=10) {
+      text="Please enter more than 10 charecters";
+      error_message.innerHTML=text;
+        reture false;     
+        }
+
+        alert("Form submitted successfully!");
+        return true;
+    </script>
   </head> 
   <body>
    <header>
@@ -74,7 +90,7 @@ var message1=document.getElementById("message").value;
     <input type="submit">
   </div>
 
-  <div id="error message"></div>
+  <div id="error_message"></div>
 </form>
      
        </div>
