@@ -32,7 +32,7 @@ var message1=document.getElementById("message").value;
       error_message.innerHTML=text;
         reture false;
     }
-if(email1.inexOf("@")==-1 || email1.length<6) {
+if(email1.indexOf("@")==-1 || email1.length<6) {
       text="Please enter valid email";
       error_message.innerHTML=text;
         reture false;
